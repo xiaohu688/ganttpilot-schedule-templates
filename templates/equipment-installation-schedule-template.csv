@@ -1,0 +1,34 @@
+ID,Phase,Task Name,Duration,Predecessors,Resource Names
+1,Planning and Engineering,Confirm equipment scope and installation boundaries,2,,Project manager
+2,Planning and Engineering,Review vendor drawings and interface requirements,4,1,Design team
+3,Planning and Engineering,Confirm utility loads and connection points,2,2,Design team
+4,Planning and Engineering,Approve lifting plan and access arrangements,3,2,Project manager
+5,Delivery and Receiving,Release purchase order and vendor documents,3,2,Procurement team
+6,Delivery and Receiving,Manufacture and dispatch equipment,15,5,Procurement team
+7,Delivery and Receiving,Receive equipment and close receiving inspection,2,6,Inspection team
+8,Site and Foundation Readiness,Survey equipment location and foundation setting out,2,2,Civil crew
+9,Site and Foundation Readiness,Construct equipment foundations and embedded items,5,8,Concrete crew
+10,Site and Foundation Readiness,Allow foundation curing and strength verification,10,9,Civil crew
+11,Site and Foundation Readiness,Release foundation survey and civil handover,1,10,Inspection team
+12,Site and Foundation Readiness,Prepare utility connections and workface access,4,3,Civil crew
+13,Lifting and Setting,"Confirm equipment, foundation and lift readiness",1,"4, 7, 11","Project manager, Inspection team"
+14,Lifting and Setting,Lift and position equipment,2,13,"Mechanical installation crew, Mobile crane"
+15,Lifting and Setting,Align and level equipment,2,14,Mechanical installation crew
+16,Lifting and Setting,Complete equipment base grouting,3,15,Concrete crew
+17,Lifting and Setting,Verify grout release for connected work,3,16,Inspection team
+18,Mechanical Completion,Connect piping and mechanical services,3,"12, 17",Mechanical installation crew
+19,Mechanical Completion,"Complete guards, lubrication and mechanical checks",2,18,Mechanical installation crew
+20,Mechanical Completion,Review mechanical completion and outstanding items,1,19,Inspection team
+21,Electrical and Controls,Install cable routes and equipment cabling,4,"12, 14",Electrical crew
+22,Electrical and Controls,Terminate power and control cables,3,21,Electrical crew
+23,Electrical and Controls,Complete de-energized electrical test records,2,22,"Electrical crew, Inspection team"
+24,Electrical and Controls,Configure controls and approved operating sequence,3,3,Commissioning engineers
+25,Electrical and Controls,Complete loop and interlock verification,2,"20, 23, 24","Electrical crew, Commissioning engineers"
+26,Commissioning and Acceptance,Approve readiness for energization and testing,1,"20, 25","Project manager, Inspection team"
+27,Commissioning and Acceptance,Run no-load commissioning tests,2,26,Commissioning engineers
+28,Commissioning and Acceptance,Run loaded trials and record performance,3,27,Commissioning engineers
+29,Commissioning and Acceptance,Review performance acceptance results,1,28,Inspection team
+30,Handover,Close handover-critical punch items,2,29,Mechanical installation crew
+31,Handover,Compile as-built and commissioning records,3,20,Project manager
+32,Handover,Train operators and maintenance personnel,2,28,Commissioning engineers
+33,Handover,Complete final equipment handover review,1,"30, 31, 32","Project manager, Inspection team"

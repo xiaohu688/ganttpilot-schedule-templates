@@ -1,0 +1,30 @@
+ID,Phase,Task Name,Duration,Predecessors,Resource Names
+1,Pre-shutdown Preparation,Agree shutdown objectives and proposed production window,2,,Project manager
+2,Pre-shutdown Preparation,Walk down equipment and freeze initial work scope,3,1,"Mechanical installation crew, Inspection team"
+3,Pre-shutdown Preparation,Prepare work packs and required approval records,5,2,Project manager
+4,Pre-shutdown Preparation,"Confirm contractors, specialist crews and vendor attendance",3,2,Procurement team
+5,Pre-shutdown Preparation,Procure and receive shutdown spares,15,2,Procurement team
+6,Pre-shutdown Preparation,"Stage spares, tools and access equipment",3,5,Mechanical installation crew
+7,Pre-shutdown Preparation,Complete pre-shutdown readiness review,1,"3, 4, 6","Project manager, Inspection team"
+8,Shutdown and Isolation,Complete controlled shutdown and cooling allowance,1,7,Project manager
+9,Shutdown and Isolation,Verify isolation boundary and release work permits,1,8,Inspection team
+10,Access and Inspection,Establish approved access and temporary work platforms,1,9,Mechanical installation crew
+11,Access and Inspection,Open equipment and complete condition inspection,1,10,"Mechanical installation crew, Inspection team"
+12,Access and Inspection,Approve findings and confirm repair scope,1,11,"Project manager, Inspection team"
+13,Maintenance Execution,Execute mechanical repair work package,3,12,Mechanical installation crew
+14,Maintenance Execution,Execute electrical maintenance work package,2,9,Electrical crew
+15,Maintenance Execution,Complete instrumentation and controls checks,2,9,Commissioning engineers
+16,Maintenance Execution,Allow for approved additional mechanical repair,1,13,Mechanical installation crew
+17,Maintenance Execution,Accept repair quality and close required test records,1,"14, 15, 16",Inspection team
+18,Reassembly and Verification,Reassemble equipment and complete connections,2,17,Mechanical installation crew
+19,Reassembly and Verification,Complete close-up inspection and verification,1,18,Inspection team
+20,Reassembly and Verification,Remove temporary access and clear the work area,1,19,Mechanical installation crew
+21,Reassembly and Verification,Release mechanical completion for startup review,1,20,Inspection team
+22,Reassembly and Verification,Compile restart-critical test and handover records,1,19,Project manager
+23,Restart and Stabilization,Complete operations startup readiness review,1,"21, 22","Project manager, Inspection team"
+24,Restart and Stabilization,Perform approved controlled restart,1,23,Commissioning engineers
+25,Restart and Stabilization,Monitor stabilization and operating performance,2,24,Commissioning engineers
+26,Restart and Stabilization,Obtain operations acceptance for return to service,1,25,"Project manager, Inspection team"
+27,Post-shutdown Closeout,Close approved non-startup punch items,2,26,Mechanical installation crew
+28,Post-shutdown Closeout,"Record actual durations, costs and lessons learned",2,26,Project manager
+29,Post-shutdown Closeout,Complete shutdown closeout review,1,"27, 28",Project manager
